@@ -1,0 +1,68 @@
+
+<div class="">
+  <div class="">
+      <div class="form-bg">
+          <form #SessionForm="ngForm" (ngSubmit)="BookingAppointment(SessionForm)"  >
+            <div class="panel panel-dark">
+              <div class="panel-heading">
+                <h3 class="panel-title">Booking An Appointment With DoctorX</h3>
+              </div>
+              <div class="panel-body">              
+                  <div class="row">      
+                 <div class="form-group col-6">
+                  <label for="Name">Name</label>
+                  <input id="Name" type="text" class="form-control"
+                        name="Name" required ngModel >
+                </div>
+                <div class="form-group col-6">
+                    <label for="Date">Date</label>
+                    <input id="Date" type="date" class="form-control"
+                          name="Date" required ngModel >
+                  </div>
+            </div> 
+                  <div class="row">
+                      <div class="col-6">
+                        <div class="form-group ">
+                            <label for="Session" >Session</label>
+                            <select id="Session" name="Session" ngModel class="form-control "  required>
+                              <option value="session1-8:30">8:30</option>
+                              <option value="session2-9:00">9:00</option>
+                              <option value="session3-9:30">9:30</option>
+                              <option value="session4-10:00">10:00</option>
+                              <option value="session5-10:30">10:30</option>
+                              <option value="session6-11:0">11:00</option>
+                              <option value="session7-11:30">11:30</option>
+                              <option value="session8-12:00">12:00</option>
+                              <option value="session9-12:30">12:30</option>
+                              <option value="session10-01:00">01:00</option>
+                              <option value="session11-01:20">01:30</option>
+                            </select>
+                          </div>  
+                      </div >
+                      <div class="col-6">
+                        <!-- <div class="form-group">
+                            <label for="branchc">Branch</label>
+                            <select id="branchc" name="branchc" ngModel class="form-control">
+                              <option value="1">CSE</option>
+                              <option value="2">ETC</option>
+                              <option value="3">Mechanical</option>
+                              <option value="4">Electrical</option>
+                            </select>
+                          </div>   -->
+                    </div>
+                  </div>          
+               
+
+                
+              </div>
+              <div class="panel-footer">
+                  <div class="text-center">
+
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+              </div>
+            </div>
+          </form>
+      </div>
+  </div>
+</div>
